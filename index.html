@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,6 +127,35 @@
             margin-bottom: 20px;
         }
 
+        /* EDUCATION */
+
+        .education {
+            background: #e9edf1;
+            border-radius: 18px;
+            padding: 35px;
+        }
+
+        .education-item {
+            margin-bottom: 30px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .education h3 {
+            color: #65798c;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .education p {
+            color: #626c76;
+            margin-bottom: 5px;
+        }
+
+        /* PROJECTS */
+
         .projects {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -172,6 +202,8 @@
             text-decoration: underline;
         }
 
+        /* SKILLS */
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -186,21 +218,7 @@
             color: #65717c;
         }
 
-        .education {
-            background: #e9edf1;
-            border-radius: 18px;
-            padding: 35px;
-        }
-
-        .education h3 {
-            color: #65798c;
-            font-size: 22px;
-            margin-bottom: 8px;
-        }
-
-        .education p {
-            color: #626c76;
-        }
+        /* FOOTER */
 
         footer {
             text-align: center;
@@ -209,7 +227,10 @@
             font-size: 14px;
         }
 
+        /* MOBILE */
+
         @media (max-width: 700px) {
+
             nav {
                 padding: 20px;
             }
@@ -234,25 +255,48 @@
                 font-size: 52px;
             }
         }
+
     </style>
 </head>
 
+
 <body>
 
+
     <!-- NAVIGATION -->
+
     <nav>
-        <div class="logo">JNM</div>
+
+        <div class="logo">
+            JNM
+        </div>
 
         <div>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
         </div>
+
     </nav>
 
 
-    <!-- HERO / HOME -->
+
+    <!-- HERO -->
+
     <header class="hero">
 
         <div class="hero-content">
@@ -275,20 +319,30 @@
                 problem solving.
             </p>
 
+
             <div class="buttons">
+
+                <!-- GITHUB -->
 
                 <a
                     class="button"
                     href="https://github.com/jnfpm"
                     target="_blank">
+
                     GitHub
+
                 </a>
+
+
+                <!-- LINKEDIN -->
 
                 <a
                     class="button"
                     href="https://www.linkedin.com/in/joana-nobre-martins-7b6386276/"
                     target="_blank">
+
                     LinkedIn
+
                 </a>
 
             </div>
@@ -298,7 +352,9 @@
     </header>
 
 
+
     <!-- ABOUT -->
+
     <section id="about">
 
         <h2 class="section-title">
@@ -334,17 +390,78 @@
     </section>
 
 
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+
+        <div class="education">
+
+
+            <!-- NOVA IMS -->
+
+            <div class="education-item">
+
+                <h3>
+                    BSc in Data Science
+                </h3>
+
+                <p>
+                    NOVA IMS · Lisbon, Portugal
+                </p>
+
+                <p>
+                    Expected graduation: September 2027
+                </p>
+
+            </div>
+
+
+            <!-- FCUL -->
+
+            <div class="education-item">
+
+                <h3>
+                    Additional Coursework in Applied Statistics
+                </h3>
+
+                <p>
+                    Faculty of Sciences, University of Lisbon
+                </p>
+
+                <p>
+                    Completed coursework in Applied Statistics,
+                    complementing my academic background in Data Science.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
     <!-- PROJECTS -->
+
     <section id="projects">
 
         <h2 class="section-title">
             Selected Projects
         </h2>
 
+
         <div class="projects">
 
 
             <!-- PROJECT 1 -->
+
             <div class="project">
 
                 <h3>
@@ -361,15 +478,19 @@
                     based on behavioural and customer-related features.
                 </p>
 
-                <!-- ADD GITHUB REPOSITORY LINK -->
-                <a href="#" target="_blank">
+                <a
+                    href="customer-segmentation.html">
+
                     View project →
+
                 </a>
 
             </div>
 
 
+
             <!-- PROJECT 2 -->
+
             <div class="project">
 
                 <h3>
@@ -386,15 +507,19 @@
                     using production and recipe-related features.
                 </p>
 
-                <!-- ADD GITHUB REPOSITORY LINK -->
-                <a href="#" target="_blank">
+                <a
+                    href="pastel-de-nata.html">
+
                     View project →
+
                 </a>
 
             </div>
 
 
+
             <!-- PROJECT 3 -->
+
             <div class="project">
 
                 <h3>
@@ -411,15 +536,19 @@
                     Unemployment Rate.
                 </p>
 
-                <!-- ADD GITHUB REPOSITORY LINK -->
-                <a href="#" target="_blank">
+                <a
+                    href="unemployment-forecasting.html">
+
                     View project →
+
                 </a>
 
             </div>
 
 
+
             <!-- PROJECT 4 -->
+
             <div class="project">
 
                 <h3>
@@ -437,9 +566,11 @@
                     classification.
                 </p>
 
-                <!-- ADD GITHUB REPOSITORY LINK -->
-                <a href="#" target="_blank">
+                <a
+                    href="parkinsons-classification.html">
+
                     View project →
+
                 </a>
 
             </div>
@@ -450,63 +581,73 @@
     </section>
 
 
+
     <!-- SKILLS -->
+
     <section id="skills">
 
         <h2 class="section-title">
             Skills
         </h2>
 
+
         <div class="skills">
 
-            <span class="skill">Python</span>
-            <span class="skill">Pandas</span>
-            <span class="skill">NumPy</span>
-            <span class="skill">Scikit-learn</span>
-            <span class="skill">SQL</span>
-            <span class="skill">Machine Learning</span>
-            <span class="skill">Data Analysis</span>
-            <span class="skill">Statistics</span>
-            <span class="skill">Forecasting</span>
-            <span class="skill">Optimization</span>
+            <span class="skill">
+                Python
+            </span>
+
+            <span class="skill">
+                Pandas
+            </span>
+
+            <span class="skill">
+                NumPy
+            </span>
+
+            <span class="skill">
+                Scikit-learn
+            </span>
+
+            <span class="skill">
+                SQL
+            </span>
+
+            <span class="skill">
+                Machine Learning
+            </span>
+
+            <span class="skill">
+                Data Analysis
+            </span>
+
+            <span class="skill">
+                Statistics
+            </span>
+
+            <span class="skill">
+                Forecasting
+            </span>
+
+            <span class="skill">
+                Optimization
+            </span>
 
         </div>
 
     </section>
 
-
-    <!-- EDUCATION -->
-    <section id="education">
-
-        <h2 class="section-title">
-            Education
-        </h2>
-
-        <div class="education">
-
-            <h3>
-                BSc in Data Science
-            </h3>
-
-            <p>
-                NOVA IMS · Lisbon, Portugal
-            </p>
-
-            <p>
-                Expected graduation: September 2027
-            </p>
-
-        </div>
-
-    </section>
 
 
     <!-- FOOTER -->
+
     <footer>
 
         © 2026 Joana Nobre Martins
 
     </footer>
 
+
 </body>
 </html>
+```
