@@ -20,8 +20,6 @@
             line-height: 1.6;
         }
 
-        /* NAVIGATION */
-
         nav {
             display: flex;
             justify-content: space-between;
@@ -47,8 +45,6 @@
             color: #687d91;
         }
 
-        /* HERO */
-
         .hero {
             min-height: 80vh;
             display: flex;
@@ -57,7 +53,7 @@
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
         }
 
         .small-title {
@@ -83,7 +79,7 @@
         }
 
         .hero p {
-            max-width: 650px;
+            max-width: 700px;
             font-size: 18px;
             color: #68727c;
         }
@@ -108,8 +104,6 @@
             color: white;
         }
 
-        /* GENERAL SECTIONS */
-
         section {
             padding: 90px 8%;
             max-width: 1200px;
@@ -122,8 +116,6 @@
             margin-bottom: 35px;
         }
 
-        /* ABOUT */
-
         .about-text {
             max-width: 850px;
             font-size: 18px;
@@ -133,8 +125,6 @@
         .about-text p {
             margin-bottom: 20px;
         }
-
-        /* PROJECTS */
 
         .projects {
             display: grid;
@@ -178,7 +168,9 @@
             font-weight: 500;
         }
 
-        /* SKILLS */
+        .project a:hover {
+            text-decoration: underline;
+        }
 
         .skills {
             display: flex;
@@ -193,8 +185,6 @@
             border-radius: 20px;
             color: #65717c;
         }
-
-        /* EDUCATION */
 
         .education {
             background: #e9edf1;
@@ -212,8 +202,6 @@
             color: #626c76;
         }
 
-        /* FOOTER */
-
         footer {
             text-align: center;
             padding: 50px 20px;
@@ -221,10 +209,7 @@
             font-size: 14px;
         }
 
-        /* MOBILE */
-
         @media (max-width: 700px) {
-
             nav {
                 padding: 20px;
             }
@@ -252,11 +237,9 @@
     </style>
 </head>
 
-
 <body>
 
     <!-- NAVIGATION -->
-
     <nav>
         <div class="logo">JNM</div>
 
@@ -269,8 +252,7 @@
     </nav>
 
 
-    <!-- HERO -->
-
+    <!-- HERO / HOME -->
     <header class="hero">
 
         <div class="hero-content">
@@ -294,14 +276,22 @@
             </p>
 
             <div class="buttons">
-                <a class="button" href="https://github.com/jnfpm" target="_blank">
+
+                <a
+                    class="button"
+                    href="https://github.com/jnfpm"
+                    target="_blank">
                     GitHub
                 </a>
 
-                <!-- Replace this with your LinkedIn -->
-                <a class="button" href="#" target="_blank">
+                <!-- ADD YOUR LINKEDIN LINK HERE -->
+                <a
+                    class="button"
+                    href="#"
+                    target="_blank">
                     LinkedIn
                 </a>
+
             </div>
 
         </div>
@@ -310,7 +300,6 @@
 
 
     <!-- ABOUT -->
-
     <section id="about">
 
         <h2 class="section-title">
@@ -328,20 +317,17 @@
             <p>
                 Throughout my degree, I have explored different areas of
                 Data Science, including supervised and unsupervised learning,
-                forecasting, and optimization.
+                forecasting, optimization, statistics, and data analysis.
             </p>
 
             <p>
-                I'm expected to graduate in September 2027. For my final
-                semester, I will be studying at the University of Seoul
-                in South Korea, gaining international academic experience
-                and exploring new perspectives in Data Science.
+                I'm expected to graduate in September 2027.
             </p>
 
             <p>
                 I'm curious, motivated to learn, and always looking for
                 opportunities to apply my technical knowledge to real-world
-                problems.
+                problems and develop new skills.
             </p>
 
         </div>
@@ -350,7 +336,6 @@
 
 
     <!-- PROJECTS -->
-
     <section id="projects">
 
         <h2 class="section-title">
@@ -359,6 +344,8 @@
 
         <div class="projects">
 
+
+            <!-- PROJECT 1 -->
             <div class="project">
 
                 <h3>
@@ -370,10 +357,12 @@
                 </div>
 
                 <p>
-                    Project applying unsupervised learning techniques
-                    to identify distinct customer segments.
+                    Academic project applying unsupervised learning
+                    techniques to identify distinct customer segments
+                    based on behavioural and customer-related features.
                 </p>
 
+                <!-- ADD GITHUB REPOSITORY LINK -->
                 <a href="#" target="_blank">
                     View project →
                 </a>
@@ -381,6 +370,7 @@
             </div>
 
 
+            <!-- PROJECT 2 -->
             <div class="project">
 
                 <h3>
@@ -392,10 +382,12 @@
                 </div>
 
                 <p>
-                    Supervised learning project predicting the quality
-                    of Pastéis de Nata using production and recipe features.
+                    Academic project applying supervised learning
+                    techniques to predict the quality of Pastéis de Nata
+                    using production and recipe-related features.
                 </p>
 
+                <!-- ADD GITHUB REPOSITORY LINK -->
                 <a href="#" target="_blank">
                     View project →
                 </a>
@@ -403,10 +395,11 @@
             </div>
 
 
+            <!-- PROJECT 3 -->
             <div class="project">
 
                 <h3>
-                    US Unemployment Rate Forecasting
+                    US Civilian Unemployment Rate Forecasting
                 </h3>
 
                 <div class="course">
@@ -414,10 +407,12 @@
                 </div>
 
                 <p>
-                    Application of the Box-Jenkins methodology and
-                    Seasonal ARIMA models to unemployment rate forecasting.
+                    Academic project applying the Box-Jenkins methodology
+                    and Seasonal ARIMA models to forecast the US Civilian
+                    Unemployment Rate.
                 </p>
 
+                <!-- ADD GITHUB REPOSITORY LINK -->
                 <a href="#" target="_blank">
                     View project →
                 </a>
@@ -425,10 +420,11 @@
             </div>
 
 
+            <!-- PROJECT 4 -->
             <div class="project">
 
                 <h3>
-                    Neural Network Optimization
+                    Parkinson's Disease Classification
                 </h3>
 
                 <div class="course">
@@ -436,16 +432,19 @@
                 </div>
 
                 <p>
-                    Application of Genetic Algorithms and Grey Wolf Optimizer
-                    to neural network optimization for Parkinson's disease
+                    Academic project applying metaheuristic optimization
+                    techniques, including Genetic Algorithms and Grey Wolf
+                    Optimizer, to neural networks for Parkinson's disease
                     classification.
                 </p>
 
+                <!-- ADD GITHUB REPOSITORY LINK -->
                 <a href="#" target="_blank">
                     View project →
                 </a>
 
             </div>
+
 
         </div>
 
@@ -453,7 +452,6 @@
 
 
     <!-- SKILLS -->
-
     <section id="skills">
 
         <h2 class="section-title">
@@ -479,7 +477,6 @@
 
 
     <!-- EDUCATION -->
-
     <section id="education">
 
         <h2 class="section-title">
@@ -500,27 +497,12 @@
                 Expected graduation: September 2027
             </p>
 
-            <br>
-
-            <h3>
-                University of Seoul
-            </h3>
-
-            <p>
-                Exchange semester · South Korea
-            </p>
-
-            <p>
-                Final semester of the Bachelor's degree
-            </p>
-
         </div>
 
     </section>
 
 
     <!-- FOOTER -->
-
     <footer>
 
         © 2026 Joana Nobre Martins
